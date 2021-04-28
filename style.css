@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+
+}
+body {
+    background-color:#FFF0E5;
+  }
+
+.container{
+    display:flex;
+}
+
+.tallIceCream{
+    position: static;
+    width: 400px;
+    height: 860px;
+    left: 40px;
+    top: 80px;
+    border: 1px solid #6D6570;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image:url(images/icecream\ 1.png)
+}
+.ubeicecream{
+   
+    position: static;
+    width: 400px;
+    height: 400px;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-image:url(images/ubeicecream\ 1.png);
+    border: 1px solid #6D6570;
+    box-sizing: border-box;
+}
+.AvocadoIceCream{
+    position: static;
+    width: 400px;
+    height: 400px;
+    left: 440px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-image:url(images/Avocado-Ice-Cream-4-1\ 1.png);
+    border: 1px solid #6D6570;
+    box-sizing: border-box;
+   
+}
+
+.moreicecream{
+    position: static;
+    width: 840px;
+    height: 400px;
+    left: 57.5px;
+    top: 540px;
+
+    border: 1px solid #6D6570;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image:url(images/moreicecream\ 1.png);
+    position: absolute;
+}
+
+@media (max-width:600px){
+    .container{
+        flex-direction: column;
+    }
+    .moreicecream{
+        width: 376px;
+        
+    }
+    .tallIceCream{
+        width:375px;
+       
+    }
+    .ubeicecream{
+        width:375px;
+        
+    }
+    .AvocadoIceCream{
+        width:375px;
+        
+    }
+}
