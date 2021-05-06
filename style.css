@@ -8,6 +8,11 @@ body {
     background-color:#FFF0E5;
   }
 
+
+  span::before {
+    content: "\A";
+  }
+
 .container{
     position: relative;
     margin-bottom: 20px;
@@ -191,6 +196,19 @@ body {
         background-image: url(images/moreicecreamMobile.png);
         background-repeat:no-repeat;
 
+    }
+    .frame1{
+        position: relative;
+        width:375px;
+    }
+    .text{
+        font-family: Roboto;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: center;        
     }
 }
 
