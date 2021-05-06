@@ -9,77 +9,109 @@ body {
   }
 
 .container{
-    display:flex;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .tallIceCream{
-    position: static;
+    position: absolute;
     width: 400px;
     height: 860px;
-    left: 40px;
+    left: 20px;
     top: 80px;
     border: 1px solid #6D6570;
-    box-sizing: border-box;
     background-repeat: no-repeat;
-    background-image:url(images/icecream\ 1.png)
+    background-image:url(images/icecream\ 1.png);
 }
 .ubeicecream{
-   
-    position: static;
+    position: absolute;
     width: 400px;
     height: 400px;
-    left: 0px;
-    top: 0px;
+    right: 468.5px;
+    top: 80px;
     background-repeat: no-repeat;
     background-image:url(images/ubeicecream\ 1.png);
     border: 1px solid #6D6570;
-    box-sizing: border-box;
 }
 .AvocadoIceCream{
-    position: static;
+    position: absolute;
     width: 400px;
     height: 400px;
-    left: 440px;
-    top: 0px;
+    right: 28.5px;
+    top: 80px;
     background-repeat: no-repeat;
     background-image:url(images/Avocado-Ice-Cream-4-1\ 1.png);
     border: 1px solid #6D6570;
-    box-sizing: border-box;
    
 }
 
 .moreicecream{
-    position: static;
+    position: absolute;
     width: 840px;
     height: 400px;
-    left: 57.5px;
+    right: 28.5px;
     top: 540px;
-
+    margin-bottom: 20px;
     border: 1px solid #6D6570;
-    box-sizing: border-box;
     background-repeat: no-repeat;
     background-image:url(images/moreicecream\ 1.png);
     position: absolute;
 }
 
-@media (max-width:600px){
-    .container{
-        flex-direction: column;
-    }
-    .moreicecream{
-        width: 376px;
+.ubeButton{
+    position: relative;
+    height: 56px;
+    width: 114px;
+    left: 142.5px;
+    top: 314px;
+    border-radius: 30px;
+    padding: 15px, 30px, 15px, 30px;
+    color:white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height:25.78px;
+    background-color: #7D63B9;
+    border: 4px solid #FFF0E5;
+    filter :drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+.avacadoButton{
+    position: relative;
+    height: 56px;
+    width: 114px;
+    left: 142.5px;
+    top: 314px;
+    border-radius: 30px;
+    padding: 15px, 30px, 15px, 30px;
+    color:white;
+    font-weight: 700;
+    font-size: 22px;
+    line-height:25.78px;
+    background-color: #206C00;
+    border: 4px solid #FFF0E5;
+    filter :drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width:768px){
+   
+     .tallIceCream{
+        position:static;
+        width: 375px;
         
-    }
-    .tallIceCream{
-        width:375px;
-       
     }
     .ubeicecream{
-        width:375px;
-        
+        margin-top: 30px;
+        width: 375px;
+        position:static;
     }
     .AvocadoIceCream{
-        width:375px;
-        
+        margin-top: 30px;
+        width: 375px;
+        position:static;
+    }
+    .moreicecream{
+        position:static;
+        height: 400px;
+        margin: 30px -40%;
     }
 }
